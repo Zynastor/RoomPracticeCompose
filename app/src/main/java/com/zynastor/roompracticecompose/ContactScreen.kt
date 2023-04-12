@@ -25,7 +25,7 @@ fun ContactScreen(state: ContactState, onEvent: (ContactEvent) -> Unit) {
         }) {
             Icon(imageVector = Icons.Default.Add, contentDescription = "Add Item")
         }
-    }) {_ ->
+    }) { _ ->
         if (state.isAddingContact) {
             AddContactDialog(state = state, onEvent = onEvent)
         }
